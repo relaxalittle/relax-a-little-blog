@@ -1,2 +1,13 @@
-# relax-a-little-blog
-Science-backed philosophy on stress regulation, decision clarity, and intentional living. The digital home of Relax A Little. Research-driven insights on anxiety reduction, nervous system regulation, instinct training, and high-performance calm. Evidence-based stress reduction, anxiety regulation, decision systems, and intentional living systems.
+# Relax A Little
+
+A science-grounded platform exploring stress regulation, decision clarity, and intentional living.
+
+This repository contains the source code and content for **Relax A Little** — a research-driven publication focused on:
+
+- Nervous system regulation and autonomic balance  
+- Anxiety reduction frameworks  
+- Decision fatigue and instinctive trust  
+- Cognitive clarity under pressure  
+- High-performance calm  
+
+The work integrates neurobiology, psychology, behavioral systems, and philosophy into practical, measurable strategies.
