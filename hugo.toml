@@ -48,7 +48,7 @@ copyright = "© 2024 Relax A Little"
     url = "/index.xml"
 
   [params.analytics.google]
-    SiteVerificationTag = ""
+    SiteVerificationTag = "20TK400Lp6vozGPs_Mvg9ca76tcfcjUMoQ10DKmKM1E"
 
   [params.cover]
     hidden = false
