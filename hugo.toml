@@ -1,0 +1,140 @@
+baseURL = "https://relaxalittle.com/"
+languageCode = "en-us"
+title = "Relax A Little"
+theme = "PaperMod"
+[pagination]
+  pagerSize = 8
+enableRobotsTXT = true
+enableGitInfo = false
+hasCJKLanguage = false
+buildDrafts = false
+buildFuture = false
+buildExpired = false
+copyright = "© 2024 Relax A Little"
+
+[params]
+  env = "production"
+  title = "Relax A Little"
+  description = "Science-backed systems for stress reduction, instinctive trust, and intentional living."
+  keywords = ["stress reduction", "mindfulness", "nervous system", "intentional living", "decision psychology", "anxiety relief", "calm", "philosophy"]
+  author = "Relax A Little"
+  images = ["/images/og-default.png"]
+  DateFormat = "January 2, 2006"
+  defaultTheme = "light"
+  disableThemeToggle = false
+  ShowReadingTime = true
+  ShowShareButtons = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowWordCount = false
+  mainSections = ["mindfulness", "decision-psychology", "nervous-system", "intentional-living", "philosophy"]
+  ShowRssButtonInSectionTermList = true
+  UseHugoToc = true
+  disableSpecial1stPost = false
+  disableScrollToTop = false
+  comments = false
+  hidemeta = false
+  hideSummary = false
+  showtoc = true
+  tocopen = false
+
+  [params.homeInfoParams]
+    Title = "Relax A Little"
+    Content = "Science-backed systems for stress reduction, instinctive trust, and intentional living. Calm, intelligent insights on anxiety, the nervous system, decision-making, and a life lived with greater ease."
+
+  [[params.socialIcons]]
+    name = "rss"
+    url = "/index.xml"
+
+  [params.analytics.google]
+    SiteVerificationTag = ""
+
+  [params.cover]
+    hidden = false
+    hiddenInList = false
+    hiddenInSingle = false
+
+  [params.editPost]
+    disabled = true
+
+  [params.label]
+    text = "Relax A Little"
+    icon = "/favicon.ico"
+    iconHeight = 35
+
+[menu]
+  [[menu.main]]
+    identifier = "mindfulness"
+    name = "Mindfulness"
+    url = "/mindfulness/"
+    weight = 10
+
+  [[menu.main]]
+    identifier = "nervous-system"
+    name = "Nervous System"
+    url = "/nervous-system/"
+    weight = 20
+
+  [[menu.main]]
+    identifier = "decision-psychology"
+    name = "Decision Psychology"
+    url = "/decision-psychology/"
+    weight = 30
+
+  [[menu.main]]
+    identifier = "intentional-living"
+    name = "Intentional Living"
+    url = "/intentional-living/"
+    weight = 40
+
+  [[menu.main]]
+    identifier = "philosophy"
+    name = "Philosophy"
+    url = "/philosophy/"
+    weight = 50
+
+  [[menu.main]]
+    identifier = "tags"
+    name = "Tags"
+    url = "/tags/"
+    weight = 60
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+  section = ["HTML", "RSS"]
+  term = ["HTML", "RSS"]
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.highlight]
+    noClasses = false
+    style = "monokai"
+
+[privacy]
+  [privacy.vimeo]
+    disabled = false
+    simple = true
+  [privacy.x]
+    disabled = false
+    enableDNT = true
+    simple = true
+  [privacy.instagram]
+    disabled = false
+    purgeCSS = false
+    simple = true
+  [privacy.youtube]
+    disabled = false
+    privacyEnhanced = true
+
+[services]
+  [services.instagram]
+    disableInlineCSS = true
+  [services.x]
+    disableInlineCSS = true

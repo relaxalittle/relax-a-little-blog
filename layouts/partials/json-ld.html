@@ -1,0 +1,15 @@
+{{- if eq .Kind "page" }}
+{{- if .IsSection }}{{ else }}
+{{- $schema := dict "@context" "https://schema.org" "@type" (default "Article" .Params.schema_type) "headline" .Title "description" (default .Summary .Description) "url" .Permalink "datePublished" (.Date.Format "2006-01-02T15:04:05Z07:00") "dateModified" (.Lastmod.Format "2006-01-02T15:04:05Z07:00") "author" (dict "@type" "Organization" "name" (default .Site.Title .Site.Params.author) "url" .Site.BaseURL) "publisher" (dict "@type" "Organization" "name" .Site.Title "url" .Site.BaseURL) "mainEntityOfPage" (dict "@type" "WebPage" "@id" .Permalink) }}
+{{- with .Params.tags }}{{ $schema = merge $schema (dict "keywords" .) }}{{ end }}
+{{- with .Params.faq }}
+{{- $faqItems := slice }}
+{{- range . }}{{ $faqItems = $faqItems | append (dict "@type" "Question" "name" .question "acceptedAnswer" (dict "@type" "Answer" "text" .answer)) }}{{ end }}
+{{- $schema = merge $schema (dict "hasPart" $faqItems) }}
+{{- end }}
+<script type="application/ld+json">{{ $schema | jsonify | safeJS }}</script>
+{{- end }}
+{{- else if .IsHome }}
+{{- $schema := dict "@context" "https://schema.org" "@type" "WebSite" "name" .Site.Title "description" .Site.Params.description "url" .Site.BaseURL }}
+<script type="application/ld+json">{{ $schema | jsonify | safeJS }}</script>
+{{- end }}
