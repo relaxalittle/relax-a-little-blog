@@ -38,6 +38,7 @@ copyright = "© 2024 Relax A Little"
   hideSummary = false
   showtoc = true
   tocopen = false
+  googleVerification = ""
 
   [params.homeInfoParams]
     Title = "Relax A Little"
