@@ -1,0 +1,19 @@
+# Hugo build output
+public/
+resources/_gen/
+
+# Hugo module cache
+/hugo_stats.json
+
+# macOS
+.DS_Store
+
+# Editor temp files
+*.swp
+*.swo
+.idea/
+.vscode/
+
+# Node (if using npm for asset pipeline)
+node_modules/
+.hugo_build.lock
